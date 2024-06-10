@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device=width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RTeam Software</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
@@ -33,24 +33,20 @@
     .nav-link {
       cursor: pointer;
     }
-    #about {
+    #about, #services, #contact {
       background-color: #f8f9fa;
       padding: 60px 0;
     }
-    #about .container {
+    #about .container, #services .container, #contact .container {
       max-width: 800px;
     }
-    #about h2 {
+    #about h2, #services h2, #contact h2 {
       color: #007bff;
       margin-bottom: 20px;
     }
-    #about p {
+    #about p, #services p, #contact p {
       color: #6c757d;
       line-height: 1.6;
-    }
-    #services {
-      background-color: #f8f9fa;
-      padding: 60px 0;
     }
     .service-card {
       border: none;
@@ -96,6 +92,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" onclick="scrollToSection('services')">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="scrollToSection('contact')">Contact Us</a>
       </li>
     </ul>
   </div>
@@ -190,6 +189,33 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Contact Us Section -->
+<!-- Contact Us Section -->
+<section id="contact" class="mb-5">
+  <div class="container">
+    <h2 class="text-center">Contact Us</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="organization">Organization Name (Optional)</label>
+        <input type="text" class="form-control" id="organization" placeholder="Enter your organization name">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
   </div>
 </section>
 
